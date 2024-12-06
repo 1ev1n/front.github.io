@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Татары сила</title>
+  <link rel="icon" href="tatari.png" type="image/x-png">
+  <link rel="stylesheet" href="css fr.css">
+  <script src="Script123.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="topp">
+  <div class="logo">
+    <img src="tatari.png" alt="Logo">
+  </div>
+    <div class="group-info">
+      <p>Группа ЭФБО-03-23</p>
+      <p>Григорьев Никита Геннадьевич</p>
+    </div>
+  </div>
+  <nav class="main-menu">
+    <ul>
+      <li><a href="page1.html">Главная</a></li>
+      <li><a href="page3.html">Первый семестр</a></li>
+      <li><a href="#">Второй семестр</a></li>
+      <li><a href="page2.html">Услуги</a></li>
+      <li><a href="#">Авторизация</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+  <aside>
+    <h3>Навигация по&nbsp;странице</h3>
+    <ul>
+      <li><a href="#lec">Лекции</a></li>
+      <li><a href="#prac">Практики</a></li>
+      <li><a href="#adres">Адрес вуза</a></li>
+      <li><a href="#rab_prog">Рабочая программа</a></li>
+    </ul>
+  </aside>
+
+  <section class="content">
+    <button id="showLecturesButton">Показать лекции</button>
+
+    <div id="lecturesTable" style="display: none;">
+      <h4 id="lec">Лекции</h4>
+      <div class="FirstTable">
+        <table border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <th>Номер</th>
+            <th>Тема</th>
+            <th>Посещение</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Основы языка HTML</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Углубленное изучение HTML</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Основы работы с CSS</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Адаптивная верстка Flexbox и Grid Layout</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Bootstrap - работа с фреймворками</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Основы языка JavaScript</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Работа с DOM и событиями в JavaScript</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Введение в GitHub и GitHub Pages</td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+    <h4 id="prac">Практики</h4>
+    <table border = "1" cellpadding="5" cellspacing = "0">
+      <tr>
+        <th>Номер</th>
+        <th>Тема</th>
+        <th>Посещение</th></tr>
+      <tr>
+        <td>1</td>
+        <td>Основы языка HTML</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>2</td>
+        <td>Формы и кнопка в HTML</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>3</td>
+        <td>Таблицы и интерактивные элементы HTML</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>4</td>
+        <td>Основы работы с CSS</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>5</td>
+        <td>Работа с классами в CSS</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>6</td>
+        <td>Работа с сетками и разметкой в HTML</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>7</td>
+        <td>Адаптивная верстка</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>8</td>
+        <td>BootStrap</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>9</td>
+        <td>Основы языка JavaScript</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>10</td>
+        <td>Базовые задачи на JS</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>11</td>
+        <td>DOM-структура приложений и работа с объектами в языке JS</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>12</td>
+        <td>Встраивание скриптов</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>13</td>
+        <td>Отладка сценариев</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>14</td>
+        <td>Анимации и работа с ними</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>15</td>
+        <td>GitHub</td>
+        <td><input type="checkbox"></tr>
+      <tr>
+        <td>16</td>
+        <td>Защита проекта</td>
+        <td><input type="checkbox"></tr>
+    </table>
+    <button id="changePracticesButton">Посмотреть практики второго семестра</button>
+
+    <h4 id="adres">Занятия проходят по адресу: Москва, проспект Вернадского, 78с4</h4>
+
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A73def99ee0b5c9c0e28a974cd840c55cd1ff495ef85a1b6cf8aa61eb01c252e4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+
+    <h4 id="rab_prog">Рабочая программа:</h4>
+<object data="PR3HTML.pdf"
+        border="1">
+
+</object>
+  </section>
+</main>
+
+<footer>
+  <p>© Григорьев Никита Геннадьевич, 2024</p>
+  <a href="https://web.telegram.org/a/#-1001596949466_1"> <img src = "telegram.png" alt = "telegram"> </a>
+</footer>
+</body>
+</html>
