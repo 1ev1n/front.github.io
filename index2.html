@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Татары сила</title>
+    <link rel="icon" href="tatari.png" type="image/x-png">
+    <link rel="stylesheet" href="css fr.css">
+    <script src="Script123.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="topp">
+        <div class="logo">
+            <img src="tatari.png" alt="Logo">
+        </div>
+        <div class="group-info">
+            <p>Группа ЭФБО-03-23</p>
+            <p>Григорьев Никита Геннадьевич</p>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="page1.html">Главная</a></li>
+            <li><a href="page3.html">Первый семестр</a></li>
+            <li><a href="#">Второй семестр</a></li>
+            <li><a href="page2.html">Услуги</a></li>
+            <li><a href="#">Авторизация</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+    <aside>
+        <h3>Навигация по&nbsp;странице</h3>
+        <ul>
+            <li><a href="#tatarah">Коротко о татарах</a></li>
+        </ul>
+    </aside>
+
+    <section class="content">
+        <h1 id="tatarah">Коротко о татарах</h1>
+        <div id="qwerty">
+        <figure>
+            <img src="eda.webp" alt="фото чак-чака">
+            <figcaption>Чак-чак <br>
+                <button id="openModal1">Заказать</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="ubor.webp" alt="фото тюбетейки">
+            <figcaption>Тюбетей <br>
+                <button id="openModal2">Заказать</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="koran.webp" alt="фото корана">
+            <figcaption>Коран <br>
+                <button id="openModal3">Заказать</button>
+            </figcaption>
+        </figure>
+            <figure>
+                <img src="pirog.jpg" alt="фото эчпочмака">
+                <figcaption>Эчпочмака <br>
+                    <button id="openModal4">Заказать</button>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="pelmen.png" alt="фото пельменей">
+                <figcaption>Татарские пельмени <br>
+                    <button id="openModal5">Заказать</button>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="shurale.jpg" alt="фото Шурале">
+                <figcaption>Шурале <br>
+                    <button id="openModal6">Заказать</button>
+                </figcaption>
+            </figure>
+        </div>
+        <p>Татары — это один из самых уважаемых и влиятельных народов в России с богатой историей и культурой. Их уникальность заключается в удивительной способности сохранять свою идентичность на протяжении веков, адаптируясь к изменениям в обществе и влиянию различных культур. Татары по праву могут гордиться своей историей, культурными традициями и значительным вкладом в развитие не только своей республики, но и всей России.
+
+            Одним из ярких примеров их силы и сплоченности является Татарский народ, который всегда умел сохранять свою культуру и традиции, несмотря на века бурных исторических событий. Татары смогли сохранить свои обычаи, язык и религию, что подчеркивает их сильную национальную идентичность. Они известны своей толерантностью, открытостью к другим культурам и умением гармонично сосуществовать с различными этносами и религиями, что делает их примером культурного единства.</p></section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm">
+                <!-- Поле для ввода имени -->-+
+                <label for="name">Как вас зовут:</label>
+                <input type="text" id="name" name="name" placeholder="Например Иванов Иван Иванович" required>
+
+                <!-- Поле для ввода электронной почты -->
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" placeholder="test@mail.ru" required>
+
+                <!-- Поле для ввода телефона -->
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 999 999 99 99" required>
+
+                <!-- Выбор страны -->
+                <label for="country">Страна:</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Выберите страну</option>
+                    <option value="Россия">Россия</option>
+                    <option value="Украина">Украина</option>
+                    <option value="Беларусь">Беларусь</option>
+                    <option value="Казахстан">Казахстан</option>
+                </select>
+
+                <!-- Выбор даты -->
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- Многострочное текстовое поле для комментариев -->
+                <label for="comments">Комментарий:</label>
+                <textarea id="comments" name="comments" placeholder="Ваш комментарий"></textarea>
+
+                <!-- Скрытое поле для передачи типа услуги -->
+                <input type="hidden" name="serviceType" value="webAppDevelopment">
+
+                <!-- Чекбокс для согласия на обработку данных -->
+                <label class="agreement">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    Согласен на обработку моих персональных данных
+                </label>
+
+                <!-- Кнопка отправки формы -->
+                <button type="submit" class="send" id ="submitButton">Отправить</button>
+            </form>
+
+            <!-- Сообщение об успешной отправке -->
+            <p id="successMessage" style="display:none; color:rgb(7, 7, 7);">Форма успешно отправлена!</p>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</main>
+
+<footer>
+    <p>© Григорьев Никита Геннадьевич, 2024</p>
+    <a href="https://web.telegram.org/a/#-1001596949466_1">
+        <img src="telegram.png" alt="telegram" style="width: 30px; height: 30px;">
+    </a>
+</footer>
+<script>
+    let formData = {
+        name: '',
+        email: '',
+        phone: '',
+        date: '',
+        comment: '',
+        printData: function() {
+            console.log(`Имя: ${this.name}`);
+            console.log(`E-mail: ${this.email}`);
+            console.log(`Телефон: ${this.phone}`);
+            console.log(`Дата: ${this.date}`);
+            console.log(`Комментарий: ${this.comments}`);
+        }
+    };
+
+    function submitForm(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const date = document.getElementById('date').value.trim();
+        const comments = document.getElementById('comments').value.trim();
+
+        if (!name || !email || !comments) {
+            alert("Имя, E-mail и Комментарий не могут быть пустыми.");
+            return;
+        }
+
+        const phoneRegex = /^\d+$/;
+        if (!phoneRegex.test(phone)) {
+            alert("Телефон должен содержать только цифры.");
+            return;
+        }
+
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!emailRegex.test(email)) {
+            alert("Введите корректный E-mail.");
+            return;
+        }
+
+        formData.name = name;
+        formData.email = email;
+        formData.phone = phone;
+        formData.date = date;
+        formData.comments = comments;
+
+        formData.printData();
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', submitForm);
+</script>
+</body>
+</html>
